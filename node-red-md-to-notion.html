@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('markdown-to-rich-text',{
+    RED.nodes.registerType('markdown-to-notion',{
         category: 'function',
         color: '#a6bbcf',
         defaults: {
@@ -9,19 +9,19 @@
         outputs:1,
         icon: "file.png",
         label: function() {
-            return this.name || "markdown to rich text";
+            return this.name || "markdown to notion";
         }
     });
 </script>
 
-<script type="text/html" data-template-name="markdown-to-rich-text">
+<script type="text/html" data-template-name="markdown-to-notion">
     <div class="form-row">
         <label for="node-input-name"><i class="icon-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
 </script>
 
-<script type="text/html" data-help-name="markdown-to-rich-text">
+<script type="text/html" data-help-name="markdown-to-notion">
     <p>This node converts markdown text into rich text format using the @tryfabric/martian package.</p>
 </script>
 
