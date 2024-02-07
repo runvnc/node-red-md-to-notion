@@ -1,18 +1,26 @@
 {
   "name": "@runvnc/node-red-md-to-notion",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "",
   "main": "node-red-md-to-notion.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Jason Livesay",
+  "bugs": "runvnc@gmail.com",
   "license": "MIT",
   "node-red": {
+    "version": ">=2.0.0",
     "nodes": {
         "node-red-md-to-notion": "node-red-md-to-notion.js"
     }
   },
+  {
+      "engines": {
+              "node": ">=16.0.0"
+        }
+  },
+      
   "keywords": [ "node-red" ],
   "dependencies": {
     "@tryfabric/martian": "^1.2.4"
