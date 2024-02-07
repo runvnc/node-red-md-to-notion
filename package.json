@@ -1,6 +1,6 @@
 {
   "name": "@runvnc/node-red-md-to-notion",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "",
   "main": "node-red-md-to-notion.js",
   "scripts": {
@@ -12,15 +12,12 @@
   "node-red": {
     "version": ">=2.0.0",
     "nodes": {
-        "node-red-md-to-notion": "node-red-md-to-notion.js"
+      "node-red-md-to-notion": "node-red-md-to-notion.js"
     }
   },
-  {
-      "engines": {
-              "node": ">=16.0.0"
-        }
+  "engines": {
+      "node": ">=16.0.0"
   },
-      
   "keywords": [ "node-red" ],
   "dependencies": {
     "@tryfabric/martian": "^1.2.4"
