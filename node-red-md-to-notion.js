@@ -1,13 +1,12 @@
 module.exports = function(RED) {
-    const { markdownToRichText } = require('@tryfabric/martian');
+    const { markdownToBlocks } = require('@tryfabric/martian');
 
-    function MarkdownToRichTextNode(config) {
+    function MarkdownToNotionBlocks(config) {
         RED.nodes.createNode(this, config);
         var node = this;
         node.on('input', function(msg, send, done) {
-            // Convert Markdown to Rich Text
             try {
-                msg.payload = markdownToRichText(msg.payload);
+                msg.payload = markdownToBlocks(msg.payload);
                 send(msg);
             } catch (error) {
                 if (done) {
@@ -20,6 +19,6 @@ module.exports = function(RED) {
             }
         });
     }
-    RED.nodes.registerType("markdown-to-rich-text", MarkdownToRichTextNode);
+    RED.nodes.registerType("markdown-to-notion", MarkdownToNotionBlocks);
 };
 
