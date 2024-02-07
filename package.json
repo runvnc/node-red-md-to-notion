@@ -1,5 +1,5 @@
 {
-  "name": "@runvnc/node-red-md-to-notion",
+  "name": "@agentnexus/node-red-md-to-notion",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
