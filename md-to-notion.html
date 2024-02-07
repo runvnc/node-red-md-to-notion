@@ -1,0 +1,27 @@
+<script type="text/javascript">
+    RED.nodes.registerType('markdown-to-rich-text',{
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name || "markdown to rich text";
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="markdown-to-rich-text">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="markdown-to-rich-text">
+    <p>This node converts markdown text into rich text format using the @tryfabric/martian package.</p>
+</script>
+
