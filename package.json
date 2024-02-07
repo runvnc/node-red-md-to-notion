@@ -1,5 +1,5 @@
 {
-  "name": "@agentnexus/node-red-md-to-notion",
+  "name": "@runvnc/node-red-md-to-notion",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "license": "MIT",
   "node-red": {
     "nodes": {
-        "md-to-notion": "md-to-notion.js"
+        "node-red-md-to-notion": "node-red-md-to-notion.js"
     }
   },
   "dependencies": {
